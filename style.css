@@ -1,14 +1,31 @@
 /* styles.css */
-body {
-  font-family: Arial, sans-serif;
+main {
+  font-family: monospace;
   margin: 0;
   padding: 0;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100vh;
   background-color: #f5f5f5;
 }
+
+
+.h{
+  font-family: monospace;
+  
+  color: #000000;
+  padding: auto;
+  margin: auto;
+  text-align: center;
+  background-color: #ffffff;
+
+}
+header{
+  background-color: #191818;
+}
+
 
 .container {
   display: flex;
@@ -16,10 +33,9 @@ body {
   align-items: center; /* Center the two divs vertically */
   gap: 20px; /* Space between the two divs */
   width: 90%; /* Responsive container width */
-  max-width: 1200px;
+  /*max-width: 1200px;*/
   border-top: 5%; /* Set the top border to less than 10% */
-  border-color: #ccc;
-  border-style: solid;
+  
 }
 
 .box {
@@ -45,6 +61,8 @@ form {
   flex-direction: column;
   align-items: center;
 }
+
+
 
 input {
   width: 80%;
@@ -83,3 +101,5 @@ button:hover {
     margin-bottom: 20px; /* Add spacing between stacked boxes */
   }
 }
+
+
