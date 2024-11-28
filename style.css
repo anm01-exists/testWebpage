@@ -1,105 +1,67 @@
-/* styles.css */
-main {
-  font-family: monospace;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  background-color: #f5f5f5;
+div{
+  padding-bottom:10px;
 }
 
-
-.h{
-  font-family: monospace;
+.main-form{
+  background-color:#3C3D37;
+  color:#ECDFCC;
   
-  color: #000000;
-  padding: auto;
-  margin: auto;
-  text-align: center;
-  background-color: #ffffff;
-
+  max-width:fit-content;
+  max-height:750px;
+ margin:0 auto;
+ padding:40px;
+ margin-top:50px;
+ margin-bottom:30px;
+ border:4px groove #6a6868;
 }
-header{
-  background-color: #191818;
+body{
+  background-color:#1E201E;
+  background-image:url("https://images.chesscomfiles.com/uploads/v1/images_users/tiny_mce/PedroPinhata/php1If5rD.png");
+  color:white;
 }
-
-
-.container {
-  display: flex;
-  justify-content: center; /* Center the two divs horizontally */
-  align-items: center; /* Center the two divs vertically */
-  gap: 20px; /* Space between the two divs */
-  width: 90%; /* Responsive container width */
-  /*max-width: 1200px;*/
-  border-top: 5%; /* Set the top border to less than 10% */
+h1,p{
+  text-align:center;
   
 }
-
-.box {
-  display: flex;
-  justify-content: center; /* Center content horizontally */
-  align-items: center; /* Center content vertically */
-  flex-direction: column; /* For stacked content inside the box */
-  min-width: 300px; /* Minimum width for the box */
-  min-height: 400px; /* Minimum height for the box */
-  background-color: #ffffff;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+p{
+margin-top:0;
+margin-bottom:10px;
 }
 
-h2 {
-  text-align: center;
-  margin-bottom: 20px;
+.inp{
+  width:100%;
+  padding:10px;
+  background-color:rgb(9, 9, 9);
+  color:white;
 }
 
-form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+#survey-form,#email-label,#number-label{
+  font-family:cursive;
+}
+textarea{
+  height:60px;
+}
+.stack{
+display:block;
 }
 
-
-
-input {
-  width: 80%;
-  padding: 10px;
-  margin: 10px 0;
-  border: 1px solid #ccc;
-  border-radius: 4px;
+#title{
+  font-size:50px;
+  margin-bottom:30px;
+  margin-top:10px;
 }
-
-button {
-  padding: 10px 20px;
-  border: none;
-  background-color: #007bff;
-  color: white;
-  border-radius: 4px;
-  cursor: pointer;
+select{
+  width:100%;
 }
-
-button:hover {
-  background-color: #0056b3;
-}
-
-/* Laptop View (Default, no media queries needed) */
-.container {
-  flex-direction: row; /* Two divs side by side */
-}
-
-/* Responsive Design for Smaller Screens */
-@media (max-width: 768px) {
-  .container {
-    flex-direction: column; /* Stack divs vertically on smaller screens */
-  }
-
-  .box {
-    width: 90%; /* Adjust width for smaller screens */
-    margin-bottom: 20px; /* Add spacing between stacked boxes */
-  }
+#submit{
+     display: block;
+    width: 60%;
+    margin: 1em auto;
+    height: 2em;
+    font-size: 1.1rem;
+    background-color: #cacaca;
+    border-color: white;
+    min-width: 300px;
 }
 
 
