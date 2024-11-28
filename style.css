@@ -1,0 +1,85 @@
+/* styles.css */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f5f5f5;
+}
+
+.container {
+  display: flex;
+  justify-content: center; /* Center the two divs horizontally */
+  align-items: center; /* Center the two divs vertically */
+  gap: 20px; /* Space between the two divs */
+  width: 90%; /* Responsive container width */
+  max-width: 1200px;
+  border-top: 5%; /* Set the top border to less than 10% */
+  border-color: #ccc;
+  border-style: solid;
+}
+
+.box {
+  display: flex;
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+  flex-direction: column; /* For stacked content inside the box */
+  min-width: 300px; /* Minimum width for the box */
+  min-height: 400px; /* Minimum height for the box */
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input {
+  width: 80%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Laptop View (Default, no media queries needed) */
+.container {
+  flex-direction: row; /* Two divs side by side */
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column; /* Stack divs vertically on smaller screens */
+  }
+
+  .box {
+    width: 90%; /* Adjust width for smaller screens */
+    margin-bottom: 20px; /* Add spacing between stacked boxes */
+  }
+}
